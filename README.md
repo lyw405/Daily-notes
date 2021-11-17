@@ -1,2 +1,2 @@
 # Daily-notes
-Share a skill everyday.
+Share everyday.
