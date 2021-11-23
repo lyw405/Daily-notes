@@ -1,2 +1,2 @@
 # Daily-notes
-Share everyday.
+Share everyday!
