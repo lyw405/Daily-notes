@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圆环进度条</title>
+    <style>
+        .container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 200px 0 0 200px;
+
+        }
+
+        .container .wrapper {
+            width: 100px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            overflow: hidden;
+        }
+
+        .container .right {
+            right: 0;
+        }
+
+        .container .left {
+            left: 0;
+        }
+
+        .container .circle {
+            width: 160px;
+            height: 160px;
+            border: 20px solid transparent;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .container .rightcircle {
+            border-top: 20px solid green;
+            border-right: 20px solid green;
+            right: 0;
+            -webkit-animation: circle_right 5s linear infinite;
+        }
+
+        .container .leftcircle {
+            border-bottom: 20px solid green;
+            border-left: 20px solid green;
+            left: 0;
+            -webkit-animation: circle_left 5s linear infinite;
+        }
+
+        @-webkit-keyframes circle_right {
+            0% {
+                -webkit-transform: rotate(-135deg);
+            }
+
+            50%,
+            100% {
+                -webkit-transform: rotate(45deg);
+            }
+        }
+
+        @-webkit-keyframes circle_left {
+
+            0%,
+            50% {
+                -webkit-transform: rotate(-135deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(45deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper right">
+            <div class="circle rightcircle"></div>
+        </div>
+        <div class="wrapper left">
+            <div class="circle leftcircle"></div>
+        </div>
+    </div>
+</body>
+
+</html>
