@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>flex布局实例--骰子</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #000;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background: #fff;
+            border-radius: 20px;
+            margin: 100px;
+            padding: 15px;
+        }
+        .item{
+            width: 30px;
+            height: 30px;   
+            background-color: #000;
+            border-radius: 15px;
+        }
+    </style>
+    <style type="text/css">
+        .box1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item1{}
+    </style>
+    <style type="text/css">
+        .box2{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .item2{}
+    </style>
+    <style type="text/css">
+        .box3{
+            display: flex;
+        }
+        .item3:nth-child(2){
+            align-self: center;
+        }
+        .item3:nth-child(3){
+            align-self: flex-end;
+        }
+    </style>
+    <style type="text/css">
+        .box4{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+        .column4{
+            flex-basis: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+    <style type="text/css">
+        .box5{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+        .column5{
+            flex-basis: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .column5:nth-child(2){
+            justify-content: center;
+        }
+    </style>
+    <style type="text/css">
+        .box6{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+        .column6{
+            flex-basis: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1 -->
+    <div class="box box1">
+        <span class="item item1"></span>
+    </div>
+    <!-- 2 -->
+    <div class="box box2">
+        <span class="item item2"></span>
+        <span class="item item2"></span>
+    </div>
+    <!-- 3 -->
+    <div class="box box3">
+        <span class="item item3"></span>
+        <span class="item item3"></span>
+        <span class="item item3"></span>
+    </div>
+    <!-- 4 -->
+    <div class="box box4">
+        <div class="column4">           
+            <span class="item item4"></span>
+            <span class="item item4"></span>
+        </div>  
+        <div class="column4">           
+            <span class="item item4"></span>
+            <span class="item item4"></span>
+        </div>
+    </div>
+    <!-- 5 -->
+    <div class="box box5">
+        <div class="column5">           
+            <span class="item item5"></span>
+            <span class="item item5"></span>
+        </div>
+        <div class="column5">
+            <span class="item item5"></span>
+        </div>
+        <div class="column5">           
+            <span class="item item5"></span>
+            <span class="item item5"></span>
+        </div>
+    </div>
+    <!-- 6 -->
+    <div class="box box6">
+        <div class="column6">           
+            <span class="item item6"></span>
+            <span class="item item6"></span>
+        </div>
+        <div class="column6">
+            <span class="item item6"></span>
+            <span class="item item6"></span>
+        </div>
+        <div class="column5">           
+            <span class="item item6"></span>
+            <span class="item item6"></span>
+        </div>
+    </div>
+</body>
+</html>
