@@ -18,6 +18,7 @@ const style = `
         color: transparent;`
 console.log('%c图片显示', style);
 ```
+谷歌上随便找了一张图片
 ## 不止于此
 除了%c还有%s（字符串），%d 或者 %i（整数），%f（浮点数），%o（可展开的DOM），%O（列出DOM的属性）。
 
