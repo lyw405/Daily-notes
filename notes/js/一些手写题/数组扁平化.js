@@ -17,14 +17,14 @@ const flatArr = (target) => {
     }
     return result;
 }
-// console.log(flatArr(arrOrg));
+console.log(flatArr(arrOrg));
 
 
 // 小技巧时间
 const flatted = (arr) => {
     while (arr.some(item => Array.isArray(item))) {
         arr = [].concat(...arr);
-    }  
+    }  1
     return arr
 }
 
